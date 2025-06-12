@@ -1,18 +1,72 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+body {
+  margin: 0;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 24px 156px;
+  gap: 24px;
+}
+.gallery li {
+  list-style-type: none;
+  width: 375px;
+  height: 200px;
+  transition: transform 0.5s;
+}
+.gallery li:hover {
+  transform: scale(1.1);
+}
+.gallery img {
+  width: 100%;
+  height: 200px;
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+  object-fit: cover;
+}
+.index {
+  padding: 0;
+}
+.index li {
+  list-style-type: none;
+  font-size: 20px;
+}
+.index li a {
+  color: black;
+  text-decoration: none;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main.form form {
+  width: 300px;
+  background-color: #626f47;
+  padding: 100px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 20px;
+}
+form input {
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+form textarea {
+  border-radius: 10px;
+  border: none;
+}
+form button {
+  height: 30px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+label {
+  font-size: 20px;
+  color: #f5ecd5;
+}
